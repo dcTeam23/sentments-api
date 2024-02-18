@@ -9,7 +9,7 @@ if [ ! -d "assets" ]; then
 fi
 
 if [ ! -f "assets/best_model_state.bin" ]; then
-  wget -o assets/best_model_state.bin -c $MODEL_URL
+  wget -P assets $MODEL_URL
   echo "model downloaded"
 fi
 
